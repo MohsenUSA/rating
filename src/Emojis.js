@@ -13,7 +13,7 @@ const Emojis = ({ selected, onSelect }) => {
       flexDirection={{ base: 'column', md: 'row' }}
       textAlign="center"
     >
-/*      <IconButton
+      <IconButton
         icon={<FaSadTear style={{ fontSize: '3rem', color: 'red', lineHeight: '3rem' }} />}
         aria-label="sad"
         onClick={() => onSelect(1)}
@@ -24,7 +24,7 @@ const Emojis = ({ selected, onSelect }) => {
         variant={selected === 1 ? 'solid' : 'outline'}
         borderRadius="50%"
         p="7px"
-      /> */
+      /> 
       <IconButton
         icon={<FaFrown style={{ fontSize: '3rem', color: 'orange', lineHeight: '3rem' }} />}
         aria-label="unhappy"
