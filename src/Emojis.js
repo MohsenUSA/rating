@@ -13,7 +13,7 @@ const Emojis = ({ selected, onSelect }) => {
       textAlign="center"
     >
       <IconButton
-        icon={<FaSadTear style={{ fontSize: '3rem', color: 'red' }} />}
+        icon={<FaSadTear style={{ fontSize: '2.5rem', color: 'red' }} />}
         aria-label="sad"
         onClick={() => onSelect(1)}
         colorScheme="gray"
@@ -22,10 +22,10 @@ const Emojis = ({ selected, onSelect }) => {
         mr={{ base: 0, md: 4 }}
         variant={selected === 1 ? 'solid' : 'outline'}
         borderRadius="50%"
-        p="6px" // Adjust padding here
+        p="7px" // Adjust padding here
       />
       <IconButton
-        icon={<FaFrown style={{ fontSize: '3rem', color: 'orange' }} />}
+        icon={<FaFrown style={{ fontSize: '2.5rem', color: 'orange' }} />}
         aria-label="unhappy"
         onClick={() => onSelect(2)}
         colorScheme="gray"
@@ -34,10 +34,10 @@ const Emojis = ({ selected, onSelect }) => {
         mr={{ base: 0, md: 4 }}
         variant={selected === 2 ? 'solid' : 'outline'}
         borderRadius="50%"
-        p="6px" // Adjust padding here
+        p="7px" // Adjust padding here
       />
       <IconButton
-        icon={<FaMeh style={{ fontSize: '3rem', color: 'yellow' }} />}
+        icon={<FaMeh style={{ fontSize: '2.5rem', color: 'yellow' }} />}
         aria-label="neutral"
         onClick={() => onSelect(3)}
         colorScheme="gray"
@@ -46,10 +46,10 @@ const Emojis = ({ selected, onSelect }) => {
         mr={{ base: 0, md: 4 }}
         variant={selected === 3 ? 'solid' : 'outline'}
         borderRadius="50%"
-        p="6px" // Adjust padding here
+        p="7px" // Adjust padding here
       />
       <IconButton
-        icon={<FaSmile style={{ fontSize: '3rem', color: 'lightgreen' }} />}
+        icon={<FaSmile style={{ fontSize: '2.5rem', color: 'lightgreen' }} />}
         aria-label="happy"
         onClick={() => onSelect(4)}
         colorScheme="gray"
@@ -58,17 +58,17 @@ const Emojis = ({ selected, onSelect }) => {
         mr={{ base: 0, md: 4 }}
         variant={selected === 4 ? 'solid' : 'outline'}
         borderRadius="50%"
-        p="6px" // Adjust padding here
+        p="7px" // Adjust padding here
       />
       <IconButton
-        icon={<FaGrinStars style={{ fontSize: '3rem', color: 'green' }} />}
+        icon={<FaGrinStars style={{ fontSize: '2.5rem', color: 'green' }} />}
         aria-label="very-happy"
         onClick={() => onSelect(5)}
         colorScheme="gray"
         size="xlg"
         variant={selected === 5 ? 'solid' : 'outline'}
         borderRadius="50%"
-        p="6px" // Adjust padding here
+        p="7px" // Adjust padding here
       />
     </Box>
   );
