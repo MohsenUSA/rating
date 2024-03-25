@@ -12,64 +12,37 @@ const Emojis = ({ selected, onSelect }) => {
       flexDirection={{ base: 'column', md: 'row' }}
       textAlign="center"
     >
-      <IconButton
-        icon={<FaSadTear style={{ fontSize: '3rem', color: 'red' }} />}
-        aria-label="sad"
-        onClick={() => onSelect(1)}
-        colorScheme="gray"
-        size="xlg"
-        mb={{ base: 4, md: 0 }}
-        mr={{ base: 0, md: 4 }}
-        variant={selected === 1 ? 'solid' : 'outline'}
-        borderRadius="50%"
-        p="7px" // Adjust padding here
-      />
-      <IconButton
-        icon={<FaFrown style={{ fontSize: '3rem', color: 'orange' }} />}
-        aria-label="unhappy"
-        onClick={() => onSelect(2)}
-        colorScheme="gray"
-        size="xlg"
-        mb={{ base: 4, md: 0 }}
-        mr={{ base: 0, md: 4 }}
-        variant={selected === 2 ? 'solid' : 'outline'}
-        borderRadius="50%"
-        p="7px" // Adjust padding here
-      />
-      <IconButton
-        icon={<FaMeh style={{ fontSize: '3rem', color: 'yellow' }} />}
-        aria-label="neutral"
-        onClick={() => onSelect(3)}
-        colorScheme="gray"
-        size="xlg"
-        mb={{ base: 4, md: 0 }}
-        mr={{ base: 0, md: 4 }}
-        variant={selected === 3 ? 'solid' : 'outline'}
-        borderRadius="50%"
-        p="7px" // Adjust padding here
-      />
-      <IconButton
-        icon={<FaSmile style={{ fontSize: '3rem', color: 'lightgreen' }} />}
-        aria-label="happy"
-        onClick={() => onSelect(4)}
-        colorScheme="gray"
-        size="xlg"
-        mb={{ base: 4, md: 0 }}
-        mr={{ base: 0, md: 4 }}
-        variant={selected === 4 ? 'solid' : 'outline'}
-        borderRadius="50%"
-        p="7px" // Adjust padding here
-      />
-      <IconButton
-        icon={<FaGrinStars style={{ fontSize: '3rem', color: 'green' }} />}
-        aria-label="very-happy"
-        onClick={() => onSelect(5)}
-        colorScheme="gray"
-        size="xlg"
-        variant={selected === 5 ? 'solid' : 'outline'}
-        borderRadius="50%"
-        p="7px" // Adjust padding here
-      />
+      <EmojiButton selected={selected === 1} onSelect={() => onSelect(1)}>
+        <FaSadTear style={{ fontSize: '3rem', color: 'red' }} />
+      </EmojiButton>
+      <EmojiButton selected={selected === 2} onSelect={() => onSelect(2)}>
+        <FaFrown style={{ fontSize: '3rem', color: 'orange' }} />
+      </EmojiButton>
+      <EmojiButton selected={selected === 3} onSelect={() => onSelect(3)}>
+        <FaMeh style={{ fontSize: '3rem', color: 'yellow' }} />
+      </EmojiButton>
+      <EmojiButton selected={selected === 4} onSelect={() => onSelect(4)}>
+        <FaSmile style={{ fontSize: '3rem', color: 'lightgreen' }} />
+      </EmojiButton>
+      <EmojiButton selected={selected === 5} onSelect={() => onSelect(5)}>
+        <FaGrinStars style={{ fontSize: '3rem', color: 'green' }} />
+      </EmojiButton>
+    </Box>
+  );
+};
+
+const EmojiButton = ({ children, selected, onSelect }) => {
+  return (
+    <Box
+      as="button"
+      onClick={onSelect}
+      mr={{ base: 2, md: 4 }}
+      mb={{ base: 4, md: 0 }}
+      bg={selected ? 'gray.200' : 'transparent'}
+      borderRadius="50%"
+      p="7px"
+    >
+      {children}
     </Box>
   );
 };
