@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/static/js/main.2f51855f.js",
-    "index.html": "/index.html",
-    "main.2f51855f.js.map": "/static/js/main.2f51855f.js.map"
+    "main.js": "//mohsenusa.github.io/rating/static/js/main.2f51855f.js",
+    "index.html": "//mohsenusa.github.io/rating/index.html",
+    "main.2f51855f.js.map": "//mohsenusa.github.io/rating/static/js/main.2f51855f.js.map"
   },
   "entrypoints": [
     "static/js/main.2f51855f.js"
