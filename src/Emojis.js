@@ -1,5 +1,3 @@
-// Emojis.js
-
 import React from 'react';
 import { Box, IconButton } from '@chakra-ui/react';
 import { FaSadTear, FaFrown, FaMeh, FaSmile, FaGrinStars } from 'react-icons/fa';
@@ -8,7 +6,7 @@ const Emojis = ({ selected, onSelect }) => {
   return (
     <Box
       d="flex"
-      alignItems="center" // Add this line
+      alignItems="flex-start"  // Set alignItems to 'flex-start' for proper alignment
       justifyContent="center"
       flexDirection={{ base: 'column', md: 'row' }}
       textAlign="center"
@@ -24,7 +22,7 @@ const Emojis = ({ selected, onSelect }) => {
         variant={selected === 1 ? 'solid' : 'outline'}
         borderRadius="50%"
         p="7px"
-      /> 
+      />
       <IconButton
         icon={<FaFrown style={{ fontSize: '3rem', color: 'orange', lineHeight: '3rem' }} />}
         aria-label="unhappy"
