@@ -21,7 +21,7 @@ const Emojis = ({ selected, onSelect }) => {
         mb={{ base: 4, md: 0 }}
         mr={{ base: 0, md: 4 }}
         variant={selected === 1 ? 'solid' : 'outline'}
-        borderRadius="50%"
+        borderRadius="40%"
         p="7px" // Adjust padding here
       />
       <IconButton
@@ -33,7 +33,7 @@ const Emojis = ({ selected, onSelect }) => {
         mb={{ base: 4, md: 0 }}
         mr={{ base: 0, md: 4 }}
         variant={selected === 2 ? 'solid' : 'outline'}
-        borderRadius="50%"
+        borderRadius="40%"
         p="7px" // Adjust padding here
       />
       <IconButton
@@ -45,7 +45,7 @@ const Emojis = ({ selected, onSelect }) => {
         mb={{ base: 4, md: 0 }}
         mr={{ base: 0, md: 4 }}
         variant={selected === 3 ? 'solid' : 'outline'}
-        borderRadius="50%"
+        borderRadius="40%"
         p="7px" // Adjust padding here
       />
       <IconButton
@@ -57,7 +57,7 @@ const Emojis = ({ selected, onSelect }) => {
         mb={{ base: 4, md: 0 }}
         mr={{ base: 0, md: 4 }}
         variant={selected === 4 ? 'solid' : 'outline'}
-        borderRadius="50%"
+        borderRadius="40%"
         p="7px" // Adjust padding here
       />
       <IconButton
@@ -67,7 +67,7 @@ const Emojis = ({ selected, onSelect }) => {
         colorScheme="gray"
         size="xlg"
         variant={selected === 5 ? 'solid' : 'outline'}
-        borderRadius="50%"
+        borderRadius="40%"
         p="7px" // Adjust padding here
       />
     </Box>
