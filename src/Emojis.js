@@ -41,10 +41,7 @@ const EmojiButton = ({ children, selected, onSelect }) => {
       bg={selected ? 'gray.200' : 'transparent'}
       borderRadius="50%"
       p="7px"
-      boxShadow={selected ? '0 0 0 3px green' : 'none'} // Green ring when selected
-      _focus={{ boxShadow: 'none' }} // Remove focus outline
-      _active={{ bg: 'none', boxShadow: 'none' }} // Remove background and shadow on click
-      _hover={{ bg: 'transparent' }} // Remove hover effect
+      border={selected ? '3px solid green' : 'none'} // Add green border when selected
     >
       {children}
     </Box>
