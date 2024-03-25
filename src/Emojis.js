@@ -13,7 +13,7 @@ const Emojis = ({ selected, onSelect }) => {
       textAlign="center"
     >
       <IconButton
-        icon={<FaSadTear style={{ fontSize: '3rem', color: 'red', height: '3rem' }} />}
+        icon={<FaSadTear style={{ fontSize: '3rem', color: 'red', lineHeight: '1' }} />}
         aria-label="sad"
         onClick={() => onSelect(1)}
         colorScheme="gray"
@@ -25,7 +25,7 @@ const Emojis = ({ selected, onSelect }) => {
         p="7px"
       />
       <IconButton
-        icon={<FaFrown style={{ fontSize: '3rem', color: 'orange', height: '3rem' }} />}
+        icon={<FaFrown style={{ fontSize: '3rem', color: 'orange', lineHeight: '1' }} />}
         aria-label="unhappy"
         onClick={() => onSelect(2)}
         colorScheme="gray"
@@ -37,7 +37,7 @@ const Emojis = ({ selected, onSelect }) => {
         p="7px"
       />
       <IconButton
-        icon={<FaMeh style={{ fontSize: '3rem', color: 'yellow', height: '3rem' }} />}
+        icon={<FaMeh style={{ fontSize: '3rem', color: 'yellow', lineHeight: '1' }} />}
         aria-label="neutral"
         onClick={() => onSelect(3)}
         colorScheme="gray"
@@ -49,7 +49,7 @@ const Emojis = ({ selected, onSelect }) => {
         p="7px"
       />
       <IconButton
-        icon={<FaSmile style={{ fontSize: '3rem', color: 'lightgreen', height: '3rem' }} />}
+        icon={<FaSmile style={{ fontSize: '3rem', color: 'lightgreen', lineHeight: '1' }} />}
         aria-label="happy"
         onClick={() => onSelect(4)}
         colorScheme="gray"
@@ -61,7 +61,7 @@ const Emojis = ({ selected, onSelect }) => {
         p="7px"
       />
       <IconButton
-        icon={<FaGrinStars style={{ fontSize: '3rem', color: 'green', height: '3rem' }} />}
+        icon={<FaGrinStars style={{ fontSize: '3rem', color: 'green', lineHeight: '1' }} />}
         aria-label="very-happy"
         onClick={() => onSelect(5)}
         colorScheme="gray"
