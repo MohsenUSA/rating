@@ -21,8 +21,8 @@ const Emojis = ({ selected, onSelect }) => {
         mb={{ base: 4, md: 0 }}
         mr={{ base: 0, md: 4 }}
         variant={selected === 1 ? 'solid' : 'outline'}
-        borderRadius="40%"
-        p="7px" // Adjust padding here
+        borderRadius="50%"
+        p="6px" // Adjust padding here
       />
       <IconButton
         icon={<FaFrown style={{ fontSize: '3rem', color: 'orange' }} />}
@@ -33,8 +33,8 @@ const Emojis = ({ selected, onSelect }) => {
         mb={{ base: 4, md: 0 }}
         mr={{ base: 0, md: 4 }}
         variant={selected === 2 ? 'solid' : 'outline'}
-        borderRadius="40%"
-        p="7px" // Adjust padding here
+        borderRadius="50%"
+        p="6px" // Adjust padding here
       />
       <IconButton
         icon={<FaMeh style={{ fontSize: '3rem', color: 'yellow' }} />}
@@ -45,8 +45,8 @@ const Emojis = ({ selected, onSelect }) => {
         mb={{ base: 4, md: 0 }}
         mr={{ base: 0, md: 4 }}
         variant={selected === 3 ? 'solid' : 'outline'}
-        borderRadius="40%"
-        p="7px" // Adjust padding here
+        borderRadius="50%"
+        p="6px" // Adjust padding here
       />
       <IconButton
         icon={<FaSmile style={{ fontSize: '3rem', color: 'lightgreen' }} />}
@@ -57,8 +57,8 @@ const Emojis = ({ selected, onSelect }) => {
         mb={{ base: 4, md: 0 }}
         mr={{ base: 0, md: 4 }}
         variant={selected === 4 ? 'solid' : 'outline'}
-        borderRadius="40%"
-        p="7px" // Adjust padding here
+        borderRadius="50%"
+        p="6px" // Adjust padding here
       />
       <IconButton
         icon={<FaGrinStars style={{ fontSize: '3rem', color: 'green' }} />}
@@ -67,8 +67,8 @@ const Emojis = ({ selected, onSelect }) => {
         colorScheme="gray"
         size="xlg"
         variant={selected === 5 ? 'solid' : 'outline'}
-        borderRadius="40%"
-        p="7px" // Adjust padding here
+        borderRadius="50%"
+        p="6px" // Adjust padding here
       />
     </Box>
   );
