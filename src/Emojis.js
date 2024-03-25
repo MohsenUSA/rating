@@ -38,9 +38,10 @@ const EmojiButton = ({ children, selected, onSelect }) => {
       onClick={onSelect}
       mr={{ base: 2, md: 4 }}
       mb={{ base: 4, md: 0 }}
-      bg={selected ? 'gray.200' : 'transparent'}
+      bg={selected ? 'gray.200' : 'gray.200'}
       borderRadius="50%"
       p="7px"
+      border={selected ? '3px solid green' : 'none'} // Add green border when selected
     >
       {children}
     </Box>
