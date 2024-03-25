@@ -1,4 +1,5 @@
 // Emojis.js
+
 import React from 'react';
 import { Box, IconButton } from '@chakra-ui/react';
 import { FaSadTear, FaFrown, FaMeh, FaSmile, FaGrinStars } from 'react-icons/fa';
@@ -13,7 +14,7 @@ const Emojis = ({ selected, onSelect }) => {
       textAlign="center"
     >
       <IconButton
-        icon={<FaSadTear style={{ fontSize: '3rem', color: 'red', lineHeight: '1' }} />}
+        icon={<FaSadTear style={{ fontSize: '3rem', color: 'red', lineHeight: '3rem' }} />}
         aria-label="sad"
         onClick={() => onSelect(1)}
         colorScheme="gray"
@@ -25,7 +26,7 @@ const Emojis = ({ selected, onSelect }) => {
         p="7px"
       />
       <IconButton
-        icon={<FaFrown style={{ fontSize: '3rem', color: 'orange', lineHeight: '1' }} />}
+        icon={<FaFrown style={{ fontSize: '3rem', color: 'orange', lineHeight: '3rem' }} />}
         aria-label="unhappy"
         onClick={() => onSelect(2)}
         colorScheme="gray"
@@ -37,7 +38,7 @@ const Emojis = ({ selected, onSelect }) => {
         p="7px"
       />
       <IconButton
-        icon={<FaMeh style={{ fontSize: '3rem', color: 'yellow', lineHeight: '1' }} />}
+        icon={<FaMeh style={{ fontSize: '3rem', color: 'yellow', lineHeight: '3rem' }} />}
         aria-label="neutral"
         onClick={() => onSelect(3)}
         colorScheme="gray"
@@ -49,7 +50,7 @@ const Emojis = ({ selected, onSelect }) => {
         p="7px"
       />
       <IconButton
-        icon={<FaSmile style={{ fontSize: '3rem', color: 'lightgreen', lineHeight: '1' }} />}
+        icon={<FaSmile style={{ fontSize: '3rem', color: 'lightgreen', lineHeight: '3rem' }} />}
         aria-label="happy"
         onClick={() => onSelect(4)}
         colorScheme="gray"
@@ -61,7 +62,7 @@ const Emojis = ({ selected, onSelect }) => {
         p="7px"
       />
       <IconButton
-        icon={<FaGrinStars style={{ fontSize: '3rem', color: 'green', lineHeight: '1' }} />}
+        icon={<FaGrinStars style={{ fontSize: '3rem', color: 'green', lineHeight: '3rem' }} />}
         aria-label="very-happy"
         onClick={() => onSelect(5)}
         colorScheme="gray"
