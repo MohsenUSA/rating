@@ -62,7 +62,7 @@ const Emojis = ({ selected, onSelect }) => {
         p="7px"
       />
       <IconButton
-        icon={<FaGrinStars style={{ fontSize: '3rem', color: 'green', lineHeight: '3rem' }} />}
+        icon={<FaGrinStars style={{ fontSize: '3rem', color: 'green', lineHeight: '3rem', verticalAlign: 'middle' }} />}
         aria-label="very-happy"
         onClick={() => onSelect(5)}
         colorScheme="gray"
