@@ -39,7 +39,7 @@ function App() {
   return (
     <ChakraProvider>
       <Box display="flex" justifyContent="center" alignItems="center" minHeight="100vh">
-        <Box width="90%" maxWidth="400px">
+        <Box width="90%" maxWidth="400px" textAlign="center">
           <Heading mb={4}>Rate your experience</Heading>
           <Emojis selected={rating} onSelect={handleRating} />
           <Textarea
@@ -48,7 +48,7 @@ function App() {
             value={comment}
             onChange={(e) => setComment(e.target.value)}
           />
-          <Button mt={4} colorScheme="teal" textAlign="center" onClick={handleSubmit}>
+          <Button mt={4} colorScheme="teal" onClick={handleSubmit} mx="auto">
             Submit
           </Button>
         </Box>
